@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:src="@drawable/failed"
+        android:elevation="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="-28dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/btn_solid_round"
+        android:backgroundTint="@color/white"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:text="@string/failed"
+            android:layout_marginTop="35dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/text_message"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:maxLines="5"
+            android:ellipsize="end"
+            android:layout_marginTop="6dp"
+            android:text="Failed to update data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ok"
+                android:layout_marginBottom="9dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_height="38dp"
+                android:textColor="@color/white"
+                android:backgroundTint="#C52121"
+                android:background="@drawable/btn_solid_round_2"
+                android:text="@string/ok" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

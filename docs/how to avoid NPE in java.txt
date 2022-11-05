@@ -1,0 +1,26 @@
+------------- avoiding NPE ----------
+
+1. Use String.valueOf() instead of toString()
+2. Use ("mithai" == itemName) instead of (itemName == "mithai") 
+3. Use ternary operator with null check of object value
+	exp: 
+	     String name = itemName == null ? "null" : itemName
+
+4. While returning list, avoid to return null list. 
+	exp:
+	     List<ItemListResponse> getItemList(ItemData data) {
+		if(data == null || data.getItemList() == null)
+		    return Collections.emptyList();
+		return data.getItemList();
+	     }	 
+
+
+5. Use safe "instanceof" Operator. Its return false even the object is null
+	exp:
+	     // Unnecessary code
+	     if (data != null &amp;&amp; data instanceof InterestingData) {
+	     }
+ 
+	     // Less code. Better!!
+             if (data instanceof InterestingData) {
+             }
