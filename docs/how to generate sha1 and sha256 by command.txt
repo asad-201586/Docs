@@ -1,0 +1,2 @@
+------ run this command in command promt(windows) ------
+keytool -list -v -keystore %USERPROFILE%\.android\debug.keystore -alias androiddebugkey -storepass android -keypass android
